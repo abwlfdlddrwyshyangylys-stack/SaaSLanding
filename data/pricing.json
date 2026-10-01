@@ -1,0 +1,42 @@
+{
+  "currency": "$",
+  "toggle": { "monthlyLabel": "Monthly", "annualLabel": "Annual", "annualDiscount": "Save 20%" },
+  "tiers": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "tagline": "For solo founders validating ideas.",
+      "monthly": 12,
+      "annual": 9,
+      "cta": "Start free trial",
+      "features": ["3 projects", "10k events / mo", "Community support", "Basic analytics", "1 seat"]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "tagline": "For teams ready to scale fast.",
+      "monthly": 39,
+      "annual": 31,
+      "cta": "Start free trial",
+      "popular": true,
+      "features": ["Unlimited projects", "500k events / mo", "Priority support", "Advanced analytics + funnels", "10 seats", "Custom domains + SSO"]
+    },
+    {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "tagline": "For orgs with compliance needs.",
+      "monthly": 99,
+      "annual": 79,
+      "cta": "Talk to sales",
+      "features": ["Everything in Growth", "Unlimited events", "Dedicated CSM + SLA", "SOC 2 / GDPR toolkit", "Unlimited seats", "On-prem or private cloud"]
+    }
+  ],
+  "matrix": [
+    { "feature": "Projects", "starter": "3", "growth": "Unlimited", "enterprise": "Unlimited" },
+    { "feature": "Events / month", "starter": "10k", "growth": "500k", "enterprise": "Unlimited" },
+    { "feature": "Seats", "starter": "1", "growth": "10", "enterprise": "Unlimited" },
+    { "feature": "SSO / SAML", "starter": "—", "growth": "✓", "enterprise": "✓" },
+    { "feature": "Audit logs", "starter": "—", "growth": "✓", "enterprise": "✓" },
+    { "feature": "SLA + CSM", "starter": "—", "growth": "—", "enterprise": "✓" }
+  ]
+}
