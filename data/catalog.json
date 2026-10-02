@@ -24,7 +24,10 @@
     "باتری 70 ساعت",
     "2.4G + بلوتوث"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/m1.webp"
+   "image": "images/vortex-x8-wireless-mouse.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Vortex X8 Wireless Mouse — 26K sensor, 58g weight, 0.8ms latency — built for competitive FPS. | ماوس بدون‌سیم Vortex X8"
   },
   {
    "id": "m2",
@@ -48,7 +51,10 @@
     "وزن 74g",
     "نورپردازی RGB"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/m2.webp"
+   "image": "images/razor-claw-mini-mouse.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Razor Claw Mini — Light and affordable, 12K sensor, great for MOBA and daily use. | ماوس Razor Claw Mini"
   },
   {
    "id": "m3",
@@ -74,7 +80,10 @@
     "وزن 52g",
     "داک شارژ"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/m3.webp"
+   "image": "images/nova-pro-esports-mouse.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Nova Pro Esports Mouse — Flagship: 30K sensor, 100M-click optical switches, magnetic charging dock. | ماوس حرفه‌ای Nova Pro"
   },
   {
    "id": "k1",
@@ -100,7 +109,10 @@
     "هات‌سواپ",
     "نورپردازی per-key"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/k1.webp"
+   "image": "images/hex-65-mechanical-keyboard.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Hex 65% Mechanical Keyboard — Linear red switches, hot-swappable, detachable Type-C — compact and fast. | کیبورد مکانیکی Hex 65%"
   },
   {
    "id": "k2",
@@ -126,7 +138,10 @@
     "QMK/VIA",
     "سوییچ طلایی"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/k2.webp"
+   "image": "images/atlas-tkl-gasket-keyboard.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Atlas TKL Gasket Keyboard — Aluminium body, thocky sound, gasket-mount layers — for typing and gaming. | کیبورد گیسکین Atlas TKL"
   },
   {
    "id": "k3",
@@ -150,7 +165,10 @@
     "نور زیرکلید",
     "نرم‌افزار اختصاصی"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/k3.webp"
+   "image": "images/plasma-membrane-keyboard.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Plasma Membrane Keyboard — Durable membrane with underglow neon, spill-resistant — budget gaming start. | کیبورد ممورینی Plasma"
   },
   {
    "id": "h1",
@@ -176,7 +194,10 @@
     "میکروفون ENC",
     "درایور 50mm"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/h1.webp"
+   "image": "images/echo-71-wireless-headset.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Echo 7.1 Wireless Headset — 7.1 surround, noise-cancelling mic, 40h battery. | هدست بی‌سیم Echo 7.1"
   },
   {
    "id": "h2",
@@ -202,7 +223,10 @@
     "حالت گیم کم‌تأخیر",
     "دو حالته"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/h2.webp"
+   "image": "images/neon-wave-studio-headset.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Neon Wave Studio Headset — 53mm titanium drivers, studio sound + game mode, wired and wireless. | هدست استودیویی Neon Wave"
   },
   {
    "id": "h3",
@@ -226,7 +250,10 @@
     "میکروفون خمیده",
     "وزن 210g"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/h3.webp"
+   "image": "images/byte-buds-wired-headset.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Byte Buds Wired Headset — Simple, light, cheap — for starting out and team chat. | هدست سیمی Byte Buds"
   },
   {
    "id": "p1",
@@ -252,7 +279,10 @@
     "4 ضمیمه پشتی",
     "باتری 20 ساعت"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/p1.webp"
+   "image": "images/orion-elite-controller.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Orion Elite Controller — Wireless pad with dual rumble, charging cradle, PC/console compatible. | دسته Orion Elite"
   },
   {
    "id": "p2",
@@ -276,7 +306,10 @@
     "لرزش",
     " plugged-and-play"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/p2.webp"
+   "image": "images/byte-pad-wired-controller.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Byte Pad Wired Controller — PC and emulator friendly, simple ergonomics, 2m cable. | دسته سیمی Byte Pad"
   },
   {
    "id": "c1",
@@ -302,7 +335,10 @@
     "تکیه‌گاه 180°",
     "تحمل 150kg"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/c1.webp"
+   "image": "images/throne-s-gaming-chair.webp",
+   "image_w": 480,
+   "image_h": 640,
+   "image_alt": "Throne S Gaming Chair — High back with lumbar pillow, PU leather, 150kg capacity. | صندلی Throne S"
   },
   {
    "id": "c2",
@@ -328,7 +364,10 @@
     "سرپرست استاندارد",
     "کمر فنری"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/c2.webp"
+   "image": "images/atlas-air-mesh-chair.webp",
+   "image_w": 480,
+   "image_h": 640,
+   "image_alt": "Atlas Air Mesh Chair — Breathable mesh back, 4D armrests, made for long sessions. | صندلی شبکه‌ای Atlas Air"
   },
   {
    "id": "cs1",
@@ -352,7 +391,10 @@
     "4K/120Hz",
     "کنترلر DualSense"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/cs1.webp"
+   "image": "images/playstation-5-pro-disc-edition.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "PlayStation 5 Pro — Disc Edition — Faster GPU, advanced ray tracing, 2TB SSD. | پلی‌استیشن 5 Pro — نسخه دیسک"
   },
   {
    "id": "cs2",
@@ -376,7 +418,10 @@
     "12 TFLOPS",
     "Game Pass"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/cs2.webp"
+   "image": "images/xbox-series-x-1tb.webp",
+   "image_w": 480,
+   "image_h": 563,
+   "image_alt": "Xbox Series X — 1TB — 12 teraflops, Game Pass ready, quiet and cool. | ایکس‌باکس سری X — 1TB"
   },
   {
    "id": "g1",
@@ -400,7 +445,10 @@
     "زیرنویس فارسی",
     "4K HDR"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/g1.webp"
+   "image": "images/cyber-rift-2-complete-edition.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Cyber Rift 2 — Complete Edition — Cyberpunk open world with mech combat; all DLC included. | Cyber Rift 2 — نسخهٔ کامل"
   },
   {
    "id": "g2",
@@ -424,7 +472,10 @@
     "رتبه‌بندی رقابتی",
     "رایگان‌بازی تا سطح 20"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/g2.webp"
+   "image": "images/shadow-protocol-standard.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Shadow Protocol — Standard — 5v5 tactical shooter with unique operators. | Shadow Protocol — استاندارد"
   },
   {
    "id": "g3",
@@ -448,7 +499,10 @@
     "کنترلر پشتیبانی",
     "Steam Deck Verified"
    ],
-   "image": "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/g3.webp"
+   "image": "images/pixel-dungeon-deluxe.webp",
+   "image_w": 480,
+   "image_h": 360,
+   "image_alt": "Pixel Dungeon Deluxe — Addictive pixel roguelite with thousands of random rooms. | Pixel Dungeon Deluxe"
   }
  ]
 }

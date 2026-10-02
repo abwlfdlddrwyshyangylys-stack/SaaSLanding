@@ -4,14 +4,15 @@
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const CANON = "https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/";
   const TG_BASE = "https://t.me/riftgear_support?text=";
-  const IMG_HOST = "https://abwlfdlddrwyshyangylys-stack.github.io";
+  const IMG_HOST = "https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding";
 
   /* esc(): escape text before innerHTML (security) */
   const esc = s => String(s ?? "")
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
   /* image https-whitelist (security) */
-  const safeImg = u => (typeof u === "string" && u.startsWith("https://" + IMG_HOST.replace("https://", "")) ? u : "");
+  const safeImg = u => (typeof u === "string" && (u.startsWith("images/") || u.startsWith(IMG_HOST + "/")) ? u : "");
+  const absImg = u => (typeof u === "string" && u.startsWith("images/") ? CANON + u : u);
 
   /* Year */
   const yearEl = $("#year");
@@ -118,19 +119,20 @@
   let query = "", activeCat = "all", sortMode = "new";
   const t = k => I18N[lang][k];
   const pname = p => (lang === "fa" ? (p.name_fa || p.name_en) : p.name_en);
+  const altFor = p => p.image_alt || `${p.name_en} — ${p.desc_en || ""} | ${p.name_fa || ""}`.trim();
   const pdesc = p => (lang === "fa" ? (p.desc_fa || p.desc_en) : p.desc_en);
   const pspecs = p => (lang === "fa" ? (p.specs_fa || p.specs_en) : p.specs_en) || [];
 
   /* ---------------- catalog ---------------- */
   const grid = $("#dealsGrid");
   const fallback = [
-    { id: "m1", name_en: "Vortex X8 Wireless Mouse", name_fa: "ماوس بدون‌سیم Vortex X8", usd: 35, price_toman: 2490000, old_toman: 2890000, stock: 3, hot: true, category: "mouse", desc_en: "26K sensor, 58g weight, 0.8ms latency — built for competitive FPS.", specs_en: ["26,000 DPI sensor", "58g weight", "70h battery", "2.4G + Bluetooth"], image: "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/m1.webp" },
-    { id: "m3", name_en: "Nova Pro Esports Mouse", name_fa: "ماوس حرفه‌ای Nova Pro", usd: 69, price_toman: 4890000, old_toman: null, stock: 8, hot: true, category: "mouse", desc_en: "Flagship: 30K sensor, 100M-click optical switches, magnetic charging dock.", specs_en: ["30,000 DPI sensor", "Optical switches", "52g weight", "Charging dock"], image: "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/m3.webp" },
-    { id: "k1", name_en: "Hex 65% Mechanical Keyboard", name_fa: "کیبورد مکانیکی Hex 65%", usd: 53, price_toman: 3790000, old_toman: 4290000, stock: 2, hot: true, category: "keyboard", desc_en: "Linear red switches, hot-swappable, detachable Type-C — compact and fast.", specs_en: ["65% layout", "Linear red switches", "Hot-swap", "Per-key RGB"], image: "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/k1.webp" },
-    { id: "h1", name_en: "Echo 7.1 Wireless Headset", name_fa: "هدست بی‌سیم Echo 7.1", usd: 41, price_toman: 2890000, old_toman: 3290000, stock: 4, hot: true, category: "headset", desc_en: "7.1 surround, noise-cancelling mic, 40h battery.", specs_en: ["7.1 surround", "40h battery", "ENC microphone", "50mm drivers"], image: "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/h1.webp" },
-    { id: "c1", name_en: "Throne S Gaming Chair", name_fa: "صندلی Throne S", usd: 112, price_toman: 7990000, old_toman: 8990000, stock: 2, hot: true, category: "chair", desc_en: "High back with lumbar pillow, PU leather, 150kg capacity.", specs_en: ["Lumbar support", "Height adjustable", "180° backrest", "150kg capacity"], image: "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/c1.webp" },
-    { id: "cs1", name_en: "PlayStation 5 Pro — Disc Edition", name_fa: "پلی‌استیشن 5 Pro — نسخه دیسک", usd: 485, price_toman: 34500000, old_toman: null, stock: 1, hot: true, category: "console", desc_en: "Faster GPU, advanced ray tracing, 2TB SSD.", specs_en: ["2TB SSD", "4K/120Hz", "DualSense controller"], image: "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/cs1.webp" },
-    { id: "g1", name_en: "Cyber Rift 2 — Complete Edition", name_fa: "Cyber Rift 2 — نسخهٔ کامل", usd: 45, price_toman: 3200000, old_toman: 3800000, stock: 15, hot: true, category: "game", desc_en: "Cyberpunk open world with mech combat; all DLC included.", specs_en: ["Single/Online", "4K HDR", "Cloud saves"], image: "https://abwlfdlddrwyshyangylys-stack.github.io/RIFTGEAR/images/g1.webp" }
+    { id: "m1", name_en: "Vortex X8 Wireless Mouse", name_fa: "ماوس بدون‌سیم Vortex X8", usd: 35, price_toman: 2490000, old_toman: 2890000, stock: 3, hot: true, category: "mouse", desc_en: "26K sensor, 58g weight, 0.8ms latency — built for competitive FPS.", specs_en: ["26,000 DPI sensor", "58g weight", "70h battery", "2.4G + Bluetooth"], image: "images/vortex-x8-wireless-mouse.webp", image_w: 480, image_h: 360 },
+    { id: "m3", name_en: "Nova Pro Esports Mouse", name_fa: "ماوس حرفه‌ای Nova Pro", usd: 69, price_toman: 4890000, old_toman: null, stock: 8, hot: true, category: "mouse", desc_en: "Flagship: 30K sensor, 100M-click optical switches, magnetic charging dock.", specs_en: ["30,000 DPI sensor", "Optical switches", "52g weight", "Charging dock"], image: "images/nova-pro-esports-mouse.webp", image_w: 480, image_h: 360 },
+    { id: "k1", name_en: "Hex 65% Mechanical Keyboard", name_fa: "کیبورد مکانیکی Hex 65%", usd: 53, price_toman: 3790000, old_toman: 4290000, stock: 2, hot: true, category: "keyboard", desc_en: "Linear red switches, hot-swappable, detachable Type-C — compact and fast.", specs_en: ["65% layout", "Linear red switches", "Hot-swap", "Per-key RGB"], image: "images/hex-65-mechanical-keyboard.webp", image_w: 480, image_h: 360 },
+    { id: "h1", name_en: "Echo 7.1 Wireless Headset", name_fa: "هدست بی‌سیم Echo 7.1", usd: 41, price_toman: 2890000, old_toman: 3290000, stock: 4, hot: true, category: "headset", desc_en: "7.1 surround, noise-cancelling mic, 40h battery.", specs_en: ["7.1 surround", "40h battery", "ENC microphone", "50mm drivers"], image: "images/echo-71-wireless-headset.webp", image_w: 480, image_h: 360 },
+    { id: "c1", name_en: "Throne S Gaming Chair", name_fa: "صندلی Throne S", usd: 112, price_toman: 7990000, old_toman: 8990000, stock: 2, hot: true, category: "chair", desc_en: "High back with lumbar pillow, PU leather, 150kg capacity.", specs_en: ["Lumbar support", "Height adjustable", "180° backrest", "150kg capacity"], image: "images/throne-s-gaming-chair.webp", image_w: 480, image_h: 640 },
+    { id: "cs1", name_en: "PlayStation 5 Pro — Disc Edition", name_fa: "پلی‌استیشن 5 Pro — نسخه دیسک", usd: 485, price_toman: 34500000, old_toman: null, stock: 1, hot: true, category: "console", desc_en: "Faster GPU, advanced ray tracing, 2TB SSD.", specs_en: ["2TB SSD", "4K/120Hz", "DualSense controller"], image: "images/playstation-5-pro-disc-edition.webp", image_w: 480, image_h: 360 },
+    { id: "g1", name_en: "Cyber Rift 2 — Complete Edition", name_fa: "Cyber Rift 2 — نسخهٔ کامل", usd: 45, price_toman: 3200000, old_toman: 3800000, stock: 15, hot: true, category: "game", desc_en: "Cyberpunk open world with mech combat; all DLC included.", specs_en: ["Single/Online", "4K HDR", "Cloud saves"], image: "images/cyber-rift-2-complete-edition.webp", image_w: 480, image_h: 360 }
   ];
   let catalog = fallback.slice();
   const byId = id => catalog.find(p => p.id === id);
@@ -302,7 +304,7 @@
     const img = safeImg(p.image);
     return `<article class="card price-card${num(p.stock) <= 2 && num(p.stock) > 0 ? " popular" : ""}" data-id="${esc(p.id)}" tabindex="0" aria-label="${esc(pname(p))}">
       ${p.hot ? `<span class="tier">◆ HOT</span>` : ""}
-      ${img ? `<img src="${esc(img)}" alt="${esc(pname(p))}" loading="lazy" width="600" height="450" class="pimg">` : ""}
+      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 380px" alt="${esc(altFor(p))}" loading="lazy" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}" class="pimg">` : ""}
       <h3 dir="auto">${esc(pname(p))}</h3>
       ${p.name_fa ? `<span dir="auto" lang="fa" class="fa-sub">${esc(p.name_fa)}</span>` : ""}
       <p>${esc(pdesc(p))}</p>
@@ -388,7 +390,7 @@
       : "";
     const img = safeImg(p.image);
     pdBody.innerHTML = `
-      ${img ? `<img src="${esc(img)}" alt="${esc(pname(p))}" width="600" height="450">` : ""}
+      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 640px) 92vw, 640px" alt="${esc(altFor(p))}" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}">` : ""}
       <h3 id="pdTitle" dir="auto">${esc(pname(p))}</h3>
       ${p.name_fa ? `<span dir="auto" lang="fa">${esc(p.name_fa)}</span>` : ""}
       <p>${esc(pdesc(p))}</p>
@@ -459,7 +461,7 @@
         sku: p.id,
         description: p.desc_en,
         category: p.category,
-        image: safeImg(p.image) || undefined,
+        image: absImg(safeImg(p.image)) || undefined,
         url: CANON + "#" + p.id,
         brand: { "@type": "Brand", name: "RIFTGEAR" },
         offers: {
