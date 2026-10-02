@@ -3,10 +3,10 @@
   {
    "id": "m1",
    "category": "mouse",
-   "name_en": "Vortex X8 Wireless Mouse",
-   "name_fa": "ماوس بدون‌سیم Vortex X8",
-   "desc_en": "26K sensor, 58g weight, 0.8ms latency — built for competitive FPS.",
-   "desc_fa": "سنسور ۲۶K، وزن ۵۸ گرم، لاته‌سنجی ۰.۸ms — برای FPS رقابتی ساخته شده.",
+   "name_en": "Razer Naga Classic",
+   "name_fa": "ماوس Razer Naga Classic",
+   "desc_en": "MMO mouse, 12-button thumb grid, wired.",
+   "desc_fa": "ماوس MMO، پنل ۱۲ دکمه، سیمی.",
    "price_toman": 2490000,
    "old_toman": 2890000,
    "usd": 35,
@@ -24,10 +24,10 @@
     "باتری 70 ساعت",
     "2.4G + بلوتوث"
    ],
-   "image": "images/vortex-x8-wireless-mouse.webp",
+   "image": "images/m1-razer-naga.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Vortex X8 Wireless Mouse — 26K sensor, 58g weight, 0.8ms latency — built for competitive FPS. | ماوس بدون‌سیم Vortex X8"
+   "image_alt": "Razer Naga Classic — MMO mouse, 12-button thumb grid, wired. | ماوس Razer Naga Classic"
   },
   {
    "id": "m2",
@@ -258,10 +258,10 @@
   {
    "id": "p1",
    "category": "pad",
-   "name_en": "Orion Elite Controller",
-   "name_fa": "دسته Orion Elite",
-   "desc_en": "Wireless pad with dual rumble, charging cradle, PC/console compatible.",
-   "desc_fa": "دستهٔ بی‌سیم با موتور لرزشی دوگانه، پد شارژ، سازگار PC/کنسول.",
+   "name_en": "Sony DualSense Controller",
+   "name_fa": "دسته DualSense سونی",
+   "desc_en": "Wireless PS5 controller, haptic feedback.",
+   "desc_fa": "دسته بی‌سیم PS5 با بازخورد لمسی.",
    "price_toman": 2190000,
    "old_toman": null,
    "usd": 31,
@@ -279,18 +279,18 @@
     "4 ضمیمه پشتی",
     "باتری 20 ساعت"
    ],
-   "image": "images/orion-elite-controller.webp",
+   "image": "images/p1-dualsense.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Orion Elite Controller — Wireless pad with dual rumble, charging cradle, PC/console compatible. | دسته Orion Elite"
+   "image_alt": "Sony DualSense Controller — Wireless PS5 controller, haptic feedback. | دسته DualSense سونی"
   },
   {
    "id": "p2",
    "category": "pad",
-   "name_en": "Byte Pad Wired Controller",
-   "name_fa": "دسته سیمی Byte Pad",
-   "desc_en": "PC and emulator friendly, simple ergonomics, 2m cable.",
-   "desc_fa": "سازگار با PC و امولاتورها، ارگونومی ساده، کابل 2 متر.",
+   "name_en": "Xbox Wireless Controller",
+   "name_fa": "دسته بی‌سیم ایکس‌باکس",
+   "desc_en": "Wireless controller, textured grips.",
+   "desc_fa": "دسته بی‌سیم با گریپ بافت‌دار.",
    "price_toman": 1450000,
    "old_toman": null,
    "usd": 20,
@@ -306,10 +306,10 @@
     "لرزش",
     " plugged-and-play"
    ],
-   "image": "images/byte-pad-wired-controller.webp",
+   "image": "images/p2-xbox-controller.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Byte Pad Wired Controller — PC and emulator friendly, simple ergonomics, 2m cable. | دسته سیمی Byte Pad"
+   "image_alt": "Xbox Wireless Controller — Wireless controller, textured grips. | دسته بی‌سیم ایکس‌باکس"
   },
   {
    "id": "c1",
@@ -372,10 +372,10 @@
   {
    "id": "cs1",
    "category": "console",
-   "name_en": "PlayStation 5 Pro — Disc Edition",
-   "name_fa": "پلی‌استیشن 5 Pro — نسخه دیسک",
-   "desc_en": "Faster GPU, advanced ray tracing, 2TB SSD.",
-   "desc_fa": "پردازندهٔ سریع‌تر، ری‌تریسینگ پیشرفته، 2TB SSD.",
+   "name_en": "PlayStation 5 + DualSense",
+   "name_fa": "پلی‌استیشن ۵ + دسته",
+   "desc_en": "PS5 console with DualSense controller.",
+   "desc_fa": "کنسول PS5 همراه دسته DualSense.",
    "price_toman": 34500000,
    "old_toman": null,
    "usd": 485,
@@ -391,18 +391,18 @@
     "4K/120Hz",
     "کنترلر DualSense"
    ],
-   "image": "images/playstation-5-pro-disc-edition.webp",
+   "image": "images/cs1-ps5.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "PlayStation 5 Pro — Disc Edition — Faster GPU, advanced ray tracing, 2TB SSD. | پلی‌استیشن 5 Pro — نسخه دیسک"
+   "image_alt": "PlayStation 5 + DualSense — PS5 console with DualSense controller. | پلی‌استیشن ۵ + دسته"
   },
   {
    "id": "cs2",
    "category": "console",
-   "name_en": "Xbox Series X — 1TB",
-   "name_fa": "ایکس‌باکس سری X — 1TB",
-   "desc_en": "12 teraflops, Game Pass ready, quiet and cool.",
-   "desc_fa": "قدرت 12 ترافلاپس، رابط Game Pass، بی‌صدا و خنک.",
+   "name_en": "Xbox Series X Console",
+   "name_fa": "کنسول Xbox Series X",
+   "desc_en": "Tower console with wireless controller.",
+   "desc_fa": "کنسول تاوری همراه دسته بی‌سیم.",
    "price_toman": 26900000,
    "old_toman": null,
    "usd": 378,
@@ -418,10 +418,10 @@
     "12 TFLOPS",
     "Game Pass"
    ],
-   "image": "images/xbox-series-x-1tb.webp",
+   "image": "images/cs2-xbox-series-x.webp",
    "image_w": 480,
    "image_h": 563,
-   "image_alt": "Xbox Series X — 1TB — 12 teraflops, Game Pass ready, quiet and cool. | ایکس‌باکس سری X — 1TB"
+   "image_alt": "Xbox Series X Console — Tower console with wireless controller. | کنسول Xbox Series X"
   },
   {
    "id": "g1",
