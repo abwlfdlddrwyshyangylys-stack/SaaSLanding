@@ -41,7 +41,6 @@
   onScroll();
 
   /* Mobile hamburger: hidden/inert + Escape */
-  document.title = lang === "fa" ? "RIFTGEAR — فروشگاه گیمینگ" : "RIFTGEAR — Pull Your Gear Out of the Rift";
   const burger = $("#hamburger");
   const mobileMenu = $("#mobileMenu");
   function setMobile(open) {
