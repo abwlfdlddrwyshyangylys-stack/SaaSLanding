@@ -21,15 +21,27 @@
   /* Sticky nav background + floating CTA */
   const nav = $("#nav");
   const floatCta = $("#floatCta");
+  let ticking = false;
   const onScroll = () => {
-    const y = window.scrollY;
-    if (nav) nav.classList.toggle("scrolled", y > 24);
-    if (floatCta) floatCta.classList.toggle("show", y > 700);
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY;
+      if (nav) nav.classList.toggle("scrolled", y > 24);
+      if (floatCta) {
+        const show = y > 700;
+        floatCta.classList.toggle("show", show);
+        if (show) { floatCta.removeAttribute("hidden"); floatCta.removeAttribute("inert"); }
+        else { floatCta.setAttribute("hidden", ""); floatCta.setAttribute("inert", ""); }
+      }
+      ticking = false;
+    });
   };
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
   /* Mobile hamburger: hidden/inert + Escape */
+  document.title = lang === "fa" ? "RIFTGEAR — فروشگاه گیمینگ" : "RIFTGEAR — Pull Your Gear Out of the Rift";
   const burger = $("#hamburger");
   const mobileMenu = $("#mobileMenu");
   function setMobile(open) {
@@ -85,12 +97,12 @@
     fa: {
       skip: "پرش به محصولات",
       navProducts: "محصولات", navCompare: "مقایسه", navDeals: "پرفروش‌ها",
-      navDeals2: "پرفروش‌ها", navReviews: "نظرات", navFaq: "سؤالات", navContact: "تماس",
+      navDeals2: "پرفروش‌ها", navReviews: "نظرات", navFaq: "پرسش‌های پرتکرار", navContact: "تماس با ما",
       dealsTitle: "پرفروش‌ها، موجودی زنده",
-      dealsSub: "کاتالوگ کامل — جستجو، فیلتر دسته‌بندی یا مرتب‌سازی بر اساس قیمت.",
+      dealsSub: "کاتالوگ کامل — جستجو، فیلتر دسته‌بندی یا مرتب‌سازی بر اساس قیمت. کالاهای کم‌موجود با تعداد دقیق باقی‌مانده مشخص‌اند.",
       picksEyebrow: "پیشنهادهای امروز",
       searchPh: "جستجوی محصول…", sortNew: "جدیدترین", sortAsc: "ارزان‌ترین", sortDesc: "گران‌ترین",
-      cartWord: "سبد", cartTitle: "🛒 سبد خرید", cartEmpty: "سبد خالی است — بریم خرید!",
+      cartWord: "سبد", cartTitle: "🛒 سبد خرید", cartEmpty: "سبد خرید خالی است — یک نگاهی به محصولات بیندازید!",
       cartNote: "سبد فقط روی همین دستگاه ذخیره می‌شود.",
       checkout: "ثبت سفارش از طریق تلگرام", add: "افزودن به سبد", details: "جزئیات",
       total: "جمع کل", oos: "ناموجود", inStock: "موجود",
@@ -126,12 +138,12 @@
   /* ---------------- catalog ---------------- */
   const grid = $("#dealsGrid");
   const fallback = [
-    { id: "m1", name_en: "Vortex X8 Wireless Mouse", name_fa: "ماوس بدون‌سیم Vortex X8", usd: 35, price_toman: 2490000, old_toman: 2890000, stock: 3, hot: true, category: "mouse", desc_en: "26K sensor, 58g weight, 0.8ms latency — built for competitive FPS.", specs_en: ["26,000 DPI sensor", "58g weight", "70h battery", "2.4G + Bluetooth"], image: "images/vortex-x8-wireless-mouse.webp", image_w: 480, image_h: 360 },
+    { id: "m1", name_en: "Razer Naga Classic", name_fa: "ماوس Razer Naga Classic", usd: 35, price_toman: 2490000, old_toman: 2890000, stock: 3, hot: true, category: "mouse", desc_en: "MMO mouse, 12-button thumb grid, wired.", desc_fa: "ماوس MMO، پنل ۱۲ دکمه، سیمی.", specs_en: ["12-button thumb grid", "18,000 DPI sensor", "Wired USB", "Ergonomic MMO grip"], specs_fa: ["پنل ۱۲ دکمه", "سنسور ۱۸٬۰۰۰ DPI", "USB سیمی", "خوش‌دست برای MMO"], image: "images/m1-razer-naga.webp", image_w: 480, image_h: 360, image_alt: "Razer Naga Classic — MMO mouse, 12-button thumb grid, wired. | ماوس Razer Naga Classic" },
     { id: "m3", name_en: "Nova Pro Esports Mouse", name_fa: "ماوس حرفه‌ای Nova Pro", usd: 69, price_toman: 4890000, old_toman: null, stock: 8, hot: true, category: "mouse", desc_en: "Flagship: 30K sensor, 100M-click optical switches, magnetic charging dock.", specs_en: ["30,000 DPI sensor", "Optical switches", "52g weight", "Charging dock"], image: "images/nova-pro-esports-mouse.webp", image_w: 480, image_h: 360 },
-    { id: "k1", name_en: "Hex 65% Mechanical Keyboard", name_fa: "کیبورد مکانیکی Hex 65%", usd: 53, price_toman: 3790000, old_toman: 4290000, stock: 2, hot: true, category: "keyboard", desc_en: "Linear red switches, hot-swappable, detachable Type-C — compact and fast.", specs_en: ["65% layout", "Linear red switches", "Hot-swap", "Per-key RGB"], image: "images/hex-65-mechanical-keyboard.webp", image_w: 480, image_h: 360 },
+    { id: "k1", name_en: "Hex 65% Mechanical Keyboard", name_fa: "کیبورد مکانیکی Hex 65%", usd: 53, price_toman: 3760000, old_toman: 4290000, stock: 2, hot: true, category: "keyboard", desc_en: "Linear red switches, hot-swappable, detachable Type-C — compact and fast.", specs_en: ["65% layout", "Linear red switches", "Hot-swap", "Per-key RGB"], image: "images/hex-65-mechanical-keyboard.webp", image_w: 480, image_h: 360 },
     { id: "h1", name_en: "Echo 7.1 Wireless Headset", name_fa: "هدست بی‌سیم Echo 7.1", usd: 41, price_toman: 2890000, old_toman: 3290000, stock: 4, hot: true, category: "headset", desc_en: "7.1 surround, noise-cancelling mic, 40h battery.", specs_en: ["7.1 surround", "40h battery", "ENC microphone", "50mm drivers"], image: "images/echo-71-wireless-headset.webp", image_w: 480, image_h: 360 },
-    { id: "c1", name_en: "Throne S Gaming Chair", name_fa: "صندلی Throne S", usd: 112, price_toman: 7990000, old_toman: 8990000, stock: 2, hot: true, category: "chair", desc_en: "High back with lumbar pillow, PU leather, 150kg capacity.", specs_en: ["Lumbar support", "Height adjustable", "180° backrest", "150kg capacity"], image: "images/throne-s-gaming-chair.webp", image_w: 480, image_h: 640 },
-    { id: "cs1", name_en: "PlayStation 5 Pro — Disc Edition", name_fa: "پلی‌استیشن 5 Pro — نسخه دیسک", usd: 485, price_toman: 34500000, old_toman: null, stock: 1, hot: true, category: "console", desc_en: "Faster GPU, advanced ray tracing, 2TB SSD.", specs_en: ["2TB SSD", "4K/120Hz", "DualSense controller"], image: "images/playstation-5-pro-disc-edition.webp", image_w: 480, image_h: 360 },
+    { id: "c1", name_en: "Throne S Gaming Chair", name_fa: "صندلی Throne S", usd: 112, price_toman: 7950000, old_toman: 8990000, stock: 2, hot: true, category: "chair", desc_en: "High back with lumbar pillow, PU leather, 150kg capacity.", specs_en: ["Lumbar support", "Height adjustable", "180° backrest", "150kg capacity"], image: "images/throne-s-gaming-chair.webp", image_w: 480, image_h: 360 },
+    { id: "cs1", name_en: "PlayStation 5 Pro — Disc Edition", name_fa: "پلی‌استیشن 5 Pro — نسخه دیسک", usd: 485, price_toman: 34440000, old_toman: null, stock: 1, hot: true, category: "console", desc_en: "Faster GPU, advanced ray tracing, 2TB SSD.", specs_en: ["2TB SSD", "4K/120Hz", "DualSense controller"], image: "images/playstation-5-pro-disc-edition.webp", image_w: 480, image_h: 360 },
     { id: "g1", name_en: "Cyber Rift 2 — Complete Edition", name_fa: "Cyber Rift 2 — نسخهٔ کامل", usd: 45, price_toman: 3200000, old_toman: 3800000, stock: 15, hot: true, category: "game", desc_en: "Cyberpunk open world with mech combat; all DLC included.", specs_en: ["Single/Online", "4K HDR", "Cloud saves"], image: "images/cyber-rift-2-complete-edition.webp", image_w: 480, image_h: 360 }
   ];
   let catalog = fallback.slice();
@@ -187,7 +199,8 @@
   function orderText() {
     const lines = cartIds().map(id => {
       const p = byId(id), q = normQty(cart[id]);
-      return `${q}× ${pname(p)} — ${fmtToman(num(p.price_toman) * q)} Toman ($${num(p.usd) * q})`;
+      const tw1 = lang === "fa" ? "تومان" : "Toman";
+      return `${q}× ${pname(p)} — ${fmtToman(num(p.price_toman) * q)} ${tw1} ($${num(p.usd) * q})`;
     });
     const { toman, usd } = cartTotals();
     const head = lang === "fa" ? "سفارش RIFTGEAR:" : "RIFTGEAR order:";
@@ -206,17 +219,17 @@
         const p = byId(id), q = normQty(cart[id]);
         return `<div class="cart-item" data-id="${esc(id)}">
           <div><b dir="auto">${esc(pname(p))}</b>
-            <span class="cart-line">${q} × ${esc(fmtToman(p.price_toman))} Toman ($${esc(p.usd)})</span></div>
+            <span class="cart-line"><bdi>${q} × ${esc(fmtToman(p.price_toman))} ${lang === "fa" ? "تومان" : "Toman"}</bdi></span></div>
           <div class="qty">
             <button data-q="-" aria-label="decrease">−</button><span>${q}</span>
             <button data-q="+" aria-label="increase">+</button>
             <button data-rm aria-label="${esc(t("remove"))}">✕</button>
           </div>
         </div>`;
-      }).join("") : `<p class="cart-empty">${esc(t("cartEmpty"))}</p>`;
+      }).join("") : `<p class="cart-empty">${esc(t("cartEmpty"))}</p><p><button class="btn btn-ghost btn-sm" id="emptyBrowse">${esc(t("browseProducts"))}</button></p>`;
     }
     const tot = $("#cartTotal"), tote = $("#cartTotalUsd");
-    if (tot) tot.textContent = `${t("total")}: ${fmtToman(toman)} Toman`;
+    if (tot) { const tw = lang === "fa" ? "تومان" : "Toman"; tot.textContent = `${t("total")}: ${fmtToman(toman)} ${tw}`; }
     if (tote) tote.textContent = `$${usd}`;
     const co = $("#checkoutBtn");
     if (co) {
@@ -224,6 +237,7 @@
       const empty = !n;
       co.classList.toggle("is-disabled", empty);
       co.setAttribute("aria-disabled", String(empty));
+      if (empty) { co.setAttribute("tabindex", "-1"); } else { co.removeAttribute("tabindex"); }
     }
   }
   const checkoutBtn = $("#checkoutBtn");
@@ -298,18 +312,18 @@
   function cardHTML(p) {
     const showOld = num(p.old_toman) > num(p.price_toman);
     const old = showOld
-      ? ` <small style="text-decoration:line-through;color:var(--dim)">${esc(fmtToman(p.old_toman))} Toman</small>`
+      ? ` <small style="text-decoration:line-through;color:var(--dim)">${esc(fmtToman(p.old_toman))} ${lang === "fa" ? "تومان" : "Toman"}</small>`
       : "";
     const dis = num(p.stock) <= 0 ? "disabled" : "";
     const img = safeImg(p.image);
     return `<article class="card price-card${num(p.stock) <= 2 && num(p.stock) > 0 ? " popular" : ""}" data-id="${esc(p.id)}" tabindex="0" aria-label="${esc(pname(p))}">
       ${p.hot ? `<span class="tier">◆ HOT</span>` : ""}
-      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 380px" alt="${esc(altFor(p))}" loading="lazy" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}" class="pimg">` : ""}
+      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 680px) 92vw, (max-width: 1024px) 45vw, 380px" alt="${esc(altFor(p))}" loading="lazy" decoding="async" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}" class="pimg">` : ""}
       <h3 dir="auto">${esc(pname(p))}</h3>
       ${p.name_fa ? `<span dir="auto" lang="fa" class="fa-sub">${esc(p.name_fa)}</span>` : ""}
       <p>${esc(pdesc(p))}</p>
       ${stockLine(p)}
-      <div class="amount">$${esc(p.usd)}<small> · ${esc(fmtToman(p.price_toman))} Toman</small>${old}</div>
+      <div class="amount"><bdi>$${esc(p.usd)}</bdi><small> · ${esc(fmtToman(p.price_toman))} ${lang === "fa" ? "تومان" : "Toman"}</small>${old}</div>
       <p class="ships">${esc(t("shipsIran"))}</p>
       <ul>${pspecs(p).slice(0, 3).map(s => `<li>${esc(s)}</li>`).join("")}</ul>
       <div class="card-actions">
@@ -386,17 +400,17 @@
       : `${t("inStock")}: ${num(p.stock)}`;
     const showOld = num(p.old_toman) > num(p.price_toman);
     const old = showOld
-      ? ` <small style="text-decoration:line-through;color:var(--dim)">${esc(fmtToman(p.old_toman))} Toman</small>`
+      ? ` <small style="text-decoration:line-through;color:var(--dim)">${esc(fmtToman(p.old_toman))} ${lang === "fa" ? "تومان" : "Toman"}</small>`
       : "";
     const img = safeImg(p.image);
     pdBody.innerHTML = `
-      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 640px) 92vw, 640px" alt="${esc(altFor(p))}" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}">` : ""}
+      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 680px) 92vw, 640px" alt="${esc(altFor(p))}" loading="lazy" decoding="async" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}">` : ""}
       <h3 id="pdTitle" dir="auto">${esc(pname(p))}</h3>
       ${p.name_fa ? `<span dir="auto" lang="fa">${esc(p.name_fa)}</span>` : ""}
       <p>${esc(pdesc(p))}</p>
       <p class="pd-stock">${esc(stockTxt)}</p>
       <ul>${pspecs(p).map(s => `<li>${esc(s)}</li>`).join("")}</ul>
-      <div class="amount">$${esc(p.usd)}<small> · ${esc(fmtToman(p.price_toman))} Toman</small>${old}</div>
+      <div class="amount"><bdi>$${esc(p.usd)}</bdi><small> · ${esc(fmtToman(p.price_toman))} ${lang === "fa" ? "تومان" : "Toman"}</small>${old}</div>
       <p class="ships">${esc(t("shipsIran"))}</p>
       <div class="pd-actions">
         <button class="btn btn-primary" id="pdAdd" ${num(p.stock) <= 0 ? "disabled" : ""}>${num(p.stock) <= 0 ? esc(t("oos")) : esc(t("add"))}</button>
@@ -423,8 +437,16 @@
       const v = t(el.dataset.i18n);
       if (typeof v === "string") el.textContent = v;
     });
-    const h = $("[data-i18n-h]"); if (h) h.textContent = t("dealsTitle");
-    const ps = $("[data-i18n-p]"); if (ps) ps.textContent = t("dealsSub");
+    const headMap = { dealsTitle: "dealsTitle", contactTitle: "contactTitle", catTitle: "catTitle" };
+    $$("[data-i18n-h]").forEach(el => {
+      const key = el.dataset.i18nH in headMap ? el.dataset.i18nH : "dealsTitle";
+      el.textContent = t(key);
+    });
+    const paraMap = { dealsSub: "dealsSub", contactSub: "contactSub", catSub: "catSub", footAbout: "footAbout" };
+    $$("[data-i18n-p]").forEach(el => {
+      const key = el.dataset.i18nP in paraMap ? el.dataset.i18nP : "dealsSub";
+      el.textContent = t(key);
+    });
     const ch = $("[data-i18n-h='contactTitle']"); if (ch && ch !== h) ch.textContent = t("contactTitle");
     const cps = $("[data-i18n-p='contactSub']"); if (cps && cps !== ps) cps.textContent = t("contactSub");
     const cth = $("[data-i18n-h='catTitle']"); if (cth && cth !== h) cth.textContent = t("catTitle");
@@ -491,13 +513,14 @@
 
   /* boot: catalog first, then render everything */
   function boot(list) {
-    if (Array.isArray(list) && list.length) catalog = list.filter(p => p && p.id);
+    if (Array.isArray(list) && list.length) catalog = list.filter(p => p && p.id && typeof p.price_toman !== "undefined");
     const known = new Set(catalog.map(p => p.id));
     cart = Object.fromEntries(
       Object.entries(cart)
         .filter(([id, q]) => known.has(id) && normQty(q) > 0 && num(byId(id).stock) > 0)
         .map(([id, q]) => [id, Math.min(normQty(q), num(byId(id).stock))])
     );
+    try { localStorage.setItem("slp_cart", JSON.stringify(cart)); } catch { /* private mode */ }
     applyLang();
     injectJsonLd();
   }

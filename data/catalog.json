@@ -13,16 +13,16 @@
    "stock": 3,
    "hot": true,
    "specs_en": [
-    "26,000 DPI sensor",
-    "58g weight",
-    "70h battery",
-    "2.4G + Bluetooth"
+    "12-button thumb grid",
+    "18,000 DPI sensor",
+    "Wired USB",
+    "Ergonomic MMO grip"
    ],
    "specs_fa": [
-    "سنسور 26,000 DPI",
-    "وزن 58g",
-    "باتری 70 ساعت",
-    "2.4G + بلوتوث"
+    "پنل ۱۲ دکمه",
+    "سنسور ۱۸٬۰۰۰ DPI",
+    "USB سیمی",
+    "خوش‌دست برای MMO"
    ],
    "image": "images/m1-razer-naga.webp",
    "image_w": 480,
@@ -92,7 +92,7 @@
    "name_fa": "کیبورد مکانیکی Hex 65%",
    "desc_en": "Linear red switches, hot-swappable, detachable Type-C — compact and fast.",
    "desc_fa": "سوییچ‌های خطی Red، هات‌سواپ، کابل Type-C جمع‌شونده — کوچک و سریع.",
-   "price_toman": 3790000,
+   "price_toman": 3760000,
    "old_toman": 4290000,
    "usd": 53,
    "stock": 2,
@@ -107,7 +107,7 @@
     "چیدمان 65%",
     "سوییچ خطی Red",
     "هات‌سواپ",
-    "نورپردازی per-key"
+    "نورپردازی تک‌کلید"
    ],
    "image": "images/hex-65-mechanical-keyboard.webp",
    "image_w": 480,
@@ -118,10 +118,10 @@
    "id": "k2",
    "category": "keyboard",
    "name_en": "Atlas TKL Gasket Keyboard",
-   "name_fa": "کیبورد گیسکین Atlas TKL",
+   "name_fa": "کیبورد گسکتی Atlas TKL",
    "desc_en": "Aluminium body, thocky sound, gasket-mount layers — for typing and gaming.",
    "desc_fa": "بدنهٔ آلومینیومی، صدای ژله‌ای، لایه‌بندی gasket-mount — برای تایپ و گیم.",
-   "price_toman": 6990000,
+   "price_toman": 6960000,
    "old_toman": null,
    "usd": 98,
    "stock": 6,
@@ -141,16 +141,16 @@
    "image": "images/atlas-tkl-gasket-keyboard.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Atlas TKL Gasket Keyboard — Aluminium body, thocky sound, gasket-mount layers — for typing and gaming. | کیبورد گیسکین Atlas TKL"
+   "image_alt": "Atlas TKL Gasket Keyboard — Aluminium body, thocky sound, gasket-mount layers — for typing and gaming. | کیبورد گسکتی Atlas TKL"
   },
   {
    "id": "k3",
    "category": "keyboard",
    "name_en": "Plasma Membrane Keyboard",
-   "name_fa": "کیبورد ممورینی Plasma",
+   "name_fa": "کیبورد غشایی (ممبران) Plasma",
    "desc_en": "Durable membrane with underglow neon, spill-resistant — budget gaming start.",
    "desc_fa": "غشایی مقاوم با نور نئونی زیر کلیدها، ضدآب — شروع ارزان گیمینگ.",
-   "price_toman": 890000,
+   "price_toman": 850000,
    "old_toman": null,
    "usd": 12,
    "stock": 30,
@@ -168,7 +168,7 @@
    "image": "images/plasma-membrane-keyboard.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Plasma Membrane Keyboard — Durable membrane with underglow neon, spill-resistant — budget gaming start. | کیبورد ممورینی Plasma"
+   "image_alt": "Plasma Membrane Keyboard — Durable membrane with underglow neon, spill-resistant — budget gaming start. | کیبورد غشایی (ممبران) Plasma"
   },
   {
    "id": "h1",
@@ -233,7 +233,7 @@
    "category": "headset",
    "name_en": "Byte Buds Wired Headset",
    "name_fa": "هدست سیمی Byte Buds",
-   "desc_en": "Simple, light, cheap — for starting out and team chat.",
+   "desc_en": "Simple, light and budget-friendly — for starting out and team chat.",
    "desc_fa": "ساده، سبک، ارزان — برای شروع و چت تیمی.",
    "price_toman": 790000,
    "old_toman": null,
@@ -276,7 +276,7 @@
    "specs_fa": [
     "بی‌سیم 2.4G",
     "موتور دوگانه",
-    "4 ضمیمه پشتی",
+    "۴ دکمه پشتی",
     "باتری 20 ساعت"
    ],
    "image": "images/p1-dualsense.webp",
@@ -287,11 +287,11 @@
   {
    "id": "p2",
    "category": "pad",
-   "name_en": "Xbox Wireless Controller",
+   "name_en": "Xbox Wired Controller",
    "name_fa": "دسته بی‌سیم ایکس‌باکس",
-   "desc_en": "Wireless controller, textured grips.",
-   "desc_fa": "دسته بی‌سیم با گریپ بافت‌دار.",
-   "price_toman": 1450000,
+   "desc_en": "Wired controller, textured grips, plug-and-play.",
+   "desc_fa": "دسته سیمی با گریپ بافت‌دار — بدون نیاز به نصب.",
+   "price_toman": 1420000,
    "old_toman": null,
    "usd": 20,
    "stock": 18,
@@ -304,7 +304,7 @@
    "specs_fa": [
     "USB سیمی",
     "لرزش",
-    " plugged-and-play"
+    "بدون نیاز به نصب"
    ],
    "image": "images/p2-xbox-controller.webp",
    "image_w": 480,
@@ -318,7 +318,7 @@
    "name_fa": "صندلی Throne S",
    "desc_en": "High back with lumbar pillow, PU leather, 150kg capacity.",
    "desc_fa": "تکیه‌گاه بلند با بالشت کمری، روکش چرم مصنوعی، تحمل 150kg.",
-   "price_toman": 7990000,
+   "price_toman": 7950000,
    "old_toman": 8990000,
    "usd": 112,
    "stock": 2,
@@ -337,7 +337,7 @@
    ],
    "image": "images/throne-s-gaming-chair.webp",
    "image_w": 480,
-   "image_h": 640,
+   "image_h": 360,
    "image_alt": "Throne S Gaming Chair — High back with lumbar pillow, PU leather, 150kg capacity. | صندلی Throne S"
   },
   {
@@ -347,7 +347,7 @@
    "name_fa": "صندلی شبکه‌ای Atlas Air",
    "desc_en": "Breathable mesh back, 4D armrests, made for long sessions.",
    "desc_fa": "پشت شبکه‌ای تنفس‌پذیر، دسته 4D، مناسب نشستن‌های طولانی.",
-   "price_toman": 12900000,
+   "price_toman": 12850000,
    "old_toman": null,
    "usd": 181,
    "stock": 4,
@@ -361,12 +361,12 @@
    "specs_fa": [
     "پشت شبکه‌ای",
     "دسته 4D",
-    "سرپرست استاندارد",
-    "کمر فنری"
+    "پشت‌سری قابل تنظیم",
+    "پشتیبانی تطبیقی کمر"
    ],
    "image": "images/atlas-air-mesh-chair.webp",
    "image_w": 480,
-   "image_h": 640,
+   "image_h": 360,
    "image_alt": "Atlas Air Mesh Chair — Breathable mesh back, 4D armrests, made for long sessions. | صندلی شبکه‌ای Atlas Air"
   },
   {
@@ -376,7 +376,7 @@
    "name_fa": "پلی‌استیشن ۵ + دسته",
    "desc_en": "PS5 console with DualSense controller.",
    "desc_fa": "کنسول PS5 همراه دسته DualSense.",
-   "price_toman": 34500000,
+   "price_toman": 34440000,
    "old_toman": null,
    "usd": 485,
    "stock": 1,
@@ -403,7 +403,7 @@
    "name_fa": "کنسول Xbox Series X",
    "desc_en": "Tower console with wireless controller.",
    "desc_fa": "کنسول تاوری همراه دسته بی‌سیم.",
-   "price_toman": 26900000,
+   "price_toman": 26840000,
    "old_toman": null,
    "usd": 378,
    "stock": 6,
@@ -420,7 +420,7 @@
    ],
    "image": "images/cs2-xbox-series-x.webp",
    "image_w": 480,
-   "image_h": 563,
+   "image_h": 360,
    "image_alt": "Xbox Series X Console — Tower console with wireless controller. | کنسول Xbox Series X"
   },
   {
@@ -442,7 +442,7 @@
    ],
    "specs_fa": [
     "تک‌نفره/آنلاین",
-    "زیرنویس فارسی",
+    "ذخیره ابری",
     "4K HDR"
    ],
    "image": "images/cyber-rift-2-complete-edition.webp",
@@ -457,7 +457,7 @@
    "name_fa": "Shadow Protocol — استاندارد",
    "desc_en": "5v5 tactical shooter with unique operators.",
    "desc_fa": "تیراندازی تاکتیکال 5v5 با اپراتورهای منحصربه‌فرد.",
-   "price_toman": 2100000,
+   "price_toman": 2060000,
    "old_toman": null,
    "usd": 29,
    "stock": 40,
@@ -465,7 +465,7 @@
    "specs_en": [
     "5v5 online",
     "Ranked",
-    "Free-to-play to level 20"
+    "Trial free to level 20"
    ],
    "specs_fa": [
     "آنلاین 5v5",
@@ -481,7 +481,7 @@
    "id": "g3",
    "category": "game",
    "name_en": "Pixel Dungeon Deluxe",
-   "name_fa": "Pixel Dungeon Deluxe",
+   "name_fa": "سیاه‌چال پیکسلی Deluxe",
    "desc_en": "Addictive pixel roguelite with thousands of random rooms.",
    "desc_fa": "روگ‌لایت پیکسلی اعتیادآور با هزاران اتاق تصادفی.",
    "price_toman": 1500000,
@@ -496,7 +496,7 @@
    ],
    "specs_fa": [
     "تک‌نفره",
-    "کنترلر پشتیبانی",
+    "پشتیبانی از دسته (کنترلر)",
     "Steam Deck Verified"
    ],
    "image": "images/pixel-dungeon-deluxe.webp",

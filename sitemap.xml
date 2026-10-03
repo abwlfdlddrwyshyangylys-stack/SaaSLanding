@@ -8,41 +8,6 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/"/>
     <xhtml:link rel="alternate" hreflang="fa" href="https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/?lang=fa"/>
-  </url>
-  <url>
-    <loc>https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/#products</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/#compare</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/#deals</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/#reviews</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/#faq</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/#contact</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abwlfdlddrwyshyangylys-stack.github.io/SaaSLanding/"/>
   </url>
 </urlset>
