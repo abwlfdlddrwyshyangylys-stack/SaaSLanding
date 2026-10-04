@@ -552,11 +552,20 @@
     });
   });
 
-  /* Scroll reveals + stagger */
+  /* Scroll reveals + stagger (hero content visible immediately; rest on scroll) */
+  const heroFirst = $(".hero .reveal");
+  if (heroFirst) {
+    $$(".hero .reveal").forEach(el => el.classList.add("visible"));
+  }
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  $$(".reveal, .stagger").forEach(el => io.observe(el));
+  }, { threshold: 0.05, rootMargin: "0px 0px 400px 0px" });
+  $$(".reveal, .stagger").forEach(el => {
+    if (el.classList.contains("visible")) return;
+    const r = el.getBoundingClientRect();
+    if (r.top < window.innerHeight && r.bottom > 0) { el.classList.add("visible"); return; }
+    io.observe(el);
+  });
 
   /* Count-up stats (disabled with prefers-reduced-motion) */
   const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
