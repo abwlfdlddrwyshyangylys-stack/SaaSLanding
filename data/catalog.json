@@ -165,10 +165,10 @@
     "نور زیرکلید",
     "نرم‌افزار اختصاصی"
    ],
-   "image": "images/plasma-membrane-keyboard.webp",
+   "image": "images/k3-apple-magic.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Plasma Membrane Keyboard — Durable membrane with underglow neon, spill-resistant — budget gaming start. | کیبورد غشایی (ممبران) Plasma"
+   "image_alt": "Apple Magic Keyboard compact (Unsplash) — spill-resistant, companion software. | کیبورد غشایی (ممبران) Plasma"
   },
   {
    "id": "h1",
@@ -194,10 +194,10 @@
     "میکروفون ENC",
     "درایور 50mm"
    ],
-   "image": "images/echo-71-wireless-headset.webp",
+   "image": "images/h1-boom-mic.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Echo 7.1 Wireless Headset — 7.1 surround, noise-cancelling mic, 40h battery. | هدست بی‌سیم Echo 7.1"
+   "image_alt": "Gaming headset with boom mic (Pexels) — 7.1 surround, 40h battery. | هدست بی‌سیم Echo 7.1"
   },
   {
    "id": "h2",
@@ -335,10 +335,10 @@
     "تکیه‌گاه 180°",
     "تحمل 150kg"
    ],
-   "image": "images/throne-s-gaming-chair.webp",
+   "image": "images/c1-gaming-chair.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Throne S Gaming Chair — High back with lumbar pillow, PU leather, 150kg capacity. | صندلی Throne S"
+   "image_alt": "Racing gaming chair black-orange (Pexels) — lumbar pillow, 150kg. | صندلی Throne S"
   },
   {
    "id": "c2",
@@ -391,10 +391,10 @@
     "4K/120Hz",
     "کنترلر DualSense"
    ],
-   "image": "images/cs1-ps5.webp",
+   "image": "images/cs1-ps5-dualsense.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "PlayStation 5 + DualSense — PS5 console with DualSense controller. | پلی‌استیشن ۵ + دسته"
+   "image_alt": "PlayStation 5 with DualSense (Pexels) — 2TB SSD, 4K/120Hz. | پلی‌استیشن 5 Pro — نسخه دیسک"
   },
   {
    "id": "cs2",
@@ -445,10 +445,10 @@
     "ذخیره ابری",
     "4K HDR"
    ],
-   "image": "images/cyber-rift-2-complete-edition.webp",
+   "image": "images/g1-neon-setup.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Cyber Rift 2 — Complete Edition — Cyberpunk open world with mech combat; all DLC included. | Cyber Rift 2 — نسخهٔ کامل"
+   "image_alt": "Neon RGB gaming setup (Unsplash) — open world, all DLC. | Cyber Rift 2 — نسخه کامل"
   },
   {
    "id": "g2",
@@ -472,10 +472,10 @@
     "رتبه‌بندی رقابتی",
     "رایگان‌بازی تا سطح 20"
    ],
-   "image": "images/shadow-protocol-standard.webp",
+   "image": "images/g2-lan-esports.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Shadow Protocol — Standard — 5v5 tactical shooter with unique operators. | Shadow Protocol — استاندارد"
+   "image_alt": "LAN esports tournament (Unsplash) — 5v5 tactical. | Shadow Protocol — استاندارد"
   },
   {
    "id": "g3",
@@ -499,10 +499,10 @@
     "پشتیبانی از دسته (کنترلر)",
     "Steam Deck Verified"
    ],
-   "image": "images/pixel-dungeon-deluxe.webp",
+   "image": "images/g3-arcade.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Pixel Dungeon Deluxe — Addictive pixel roguelite with thousands of random rooms. | Pixel Dungeon Deluxe"
+   "image_alt": "Retro neon arcade room (Unsplash) — thousands of rooms. | سیاه‌چال پیکسلی Deluxe"
   }
  ]
 }
