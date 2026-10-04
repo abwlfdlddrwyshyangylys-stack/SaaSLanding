@@ -358,6 +358,7 @@
       renderChips(); renderShop();
     });
     if (grid.classList.contains("stagger")) grid.classList.add("visible");
+    if (window.__riftAnim) window.__riftAnim(grid.querySelectorAll(".card"));
   }
   if (grid) {
     grid.addEventListener("click", e => {
