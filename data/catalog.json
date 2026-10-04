@@ -51,10 +51,10 @@
     "وزن 74g",
     "نورپردازی RGB"
    ],
-   "image": "images/m2-logitech-g305.webp",
+   "image": "images/m2-combo-own.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Logitech G305 wireless gaming mouse (Unsplash) — 12K HERO sensor, great for MOBA. | ماوس Razor Claw Mini"
+   "image_alt": "Logitech G mouse + compact keyboard — your own photo. | ماوس Razor Claw Mini"
   },
   {
    "id": "m3",
@@ -138,10 +138,10 @@
     "QMK/VIA",
     "سوییچ طلایی"
    ],
-   "image": "images/k2-keychron-k2.webp",
+   "image": "images/k2-65-blue-own.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Keychron K2 75% wireless mechanical keyboard (Unsplash) — hot-swap, RGB. | کیبورد گسکتی Atlas TKL"
+   "image_alt": "65% mechanical keyboard blue backlight — your own photo. | کیبورد گسکتی Atlas TKL"
   },
   {
    "id": "k3",
@@ -165,10 +165,10 @@
     "نور زیرکلید",
     "نرم‌افزار اختصاصی"
    ],
-   "image": "images/k3-apple-magic.webp",
+   "image": "images/k3-75-own.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Apple Magic Keyboard compact (Unsplash) — spill-resistant, companion software. | کیبورد غشایی (ممبران) Plasma"
+   "image_alt": "75% white-backlit keyboard — your own photo. | کیبورد غشایی (ممبران) Plasma"
   },
   {
    "id": "h1",
@@ -391,10 +391,10 @@
     "4K/120Hz",
     "کنترلر DualSense"
    ],
-   "image": "images/cs1-ps5-dualsense.webp",
+   "image": "images/cs1-ps5-pro-own.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "PlayStation 5 with DualSense (Pexels) — 2TB SSD, 4K/120Hz. | پلی‌استیشن 5 Pro — نسخه دیسک"
+   "image_alt": "PS5 Pro with DualSense — your own photo. | پلی‌استیشن 5 Pro — نسخه دیسک"
   },
   {
    "id": "cs2",
