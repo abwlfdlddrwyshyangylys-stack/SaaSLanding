@@ -51,10 +51,10 @@
     "وزن 74g",
     "نورپردازی RGB"
    ],
-   "image": "images/razor-claw-mini-mouse.webp",
+   "image": "images/m2-logitech-g305.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Razor Claw Mini — Light and affordable, 12K sensor, great for MOBA and daily use. | ماوس Razor Claw Mini"
+   "image_alt": "Logitech G305 wireless gaming mouse (Unsplash) — 12K HERO sensor, great for MOBA. | ماوس Razor Claw Mini"
   },
   {
    "id": "m3",
@@ -138,10 +138,10 @@
     "QMK/VIA",
     "سوییچ طلایی"
    ],
-   "image": "images/atlas-tkl-gasket-keyboard.webp",
+   "image": "images/k2-keychron-k2.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Atlas TKL Gasket Keyboard — Aluminium body, thocky sound, gasket-mount layers — for typing and gaming. | کیبورد گسکتی Atlas TKL"
+   "image_alt": "Keychron K2 75% wireless mechanical keyboard (Unsplash) — hot-swap, RGB. | کیبورد گسکتی Atlas TKL"
   },
   {
    "id": "k3",
@@ -421,7 +421,7 @@
    "image": "images/cs2-xbox-series-x.webp",
    "image_w": 480,
    "image_h": 360,
-   "image_alt": "Xbox Series X Console — Tower console with wireless controller. | کنسول Xbox Series X"
+   "image_alt": "Xbox Series X 1TB with wireless controller (Unsplash). | کنسول Xbox Series X"
   },
   {
    "id": "g1",
