@@ -317,7 +317,7 @@
     const img = safeImg(p.image);
     return `<article class="card price-card${num(p.stock) <= 2 && num(p.stock) > 0 ? " popular" : ""}" data-id="${esc(p.id)}" tabindex="0" aria-label="${esc(pname(p))}">
       ${p.hot ? `<span class="tier">◆ HOT</span>` : ""}
-      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 680px) 92vw, (max-width: 1024px) 45vw, 380px" alt="${esc(altFor(p))}" loading="lazy" decoding="async" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}" class="pimg">` : ""}
+      ${img ? `<img src="${esc(img)}" srcset="${esc(img)} 480w" sizes="(max-width: 680px) 92vw, (max-width: 1024px) 45vw, 380px" alt="${esc(altFor(p))}" loading="lazy" decoding="async" width="${num(p.image_w) || 480}" height="${num(p.image_h) || 360}" class="pimg" onerror="this.closest('article').querySelector('.pimg-fallback').hidden=false;this.remove()">` + `<div class="pimg-fallback" hidden style="aspect-ratio:4/3;display:grid;place-items:center;border:1px solid var(--border);border-radius:12px;margin-bottom:14px;background:var(--bg-3);font-weight:800">RIFTGEAR</div>` : ""}
       <h3 dir="auto">${esc(pname(p))}</h3>
       ${p.name_fa ? `<span dir="auto" lang="fa" class="fa-sub">${esc(p.name_fa)}</span>` : ""}
       <p>${esc(pdesc(p))}</p>
